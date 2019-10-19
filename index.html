@@ -2,471 +2,372 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello world</title>
+    <title>ilahajiyeva | hello world </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="jquery/jquery-3.4.1.min.js"></script>
-    <link href="fontawesome-free-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <style>
-        * {
-            text-decoration: none;
-            list-style-type: none;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: url("https://i.pinimg.com/originals/fb/15/48/fb1548469db462592cd73aae7b9ca4de.jpg") no-repeat;
-            background-size: cover;
-            background-position: center;
-            width: 100%;
-            height: 600px;
-            margin-bottom: 80px;
-        }
-
-        h3 {
-            font-family: JasmineUPC;
-            font-size: 50px;
-            color: white;
-            position: absolute;
-            margin-top: 150px;
-            margin-left: 600px;
-        }
-
-        .headbtn {
-            position: absolute;
-            margin-top: 230px;
-            margin-left: 630px;
-            font-family: JasmineUPC;
-            font-size: 30px;
-            color: white;
-            border: 1px solid white;
-            padding: 15px;
-            background: #0c5460;
-            border-radius: 5px;
-        }
-
-        .headbtn:hover {
-            background: #721c24;
-        }
-
-        /*home,about*/
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #f9f9f9;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-
-        .sidenav a {
-            transition: 0.3s;
-            font-size: 25px;
-            padding: 8px 8px 8px 32px;
-            color: #0c5460;
-            display: block;
-            text-decoration: none;
-        }
-
-        .sidenav a:hover {
-            color: #721c24;
-        }
-
-        /*X buton*/
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 35px;
-            margin-left: 50px;
-        }
-
-        @media screen and (max-height: 450px) {
-            .sidenav {
-                padding-top: 15px;
-            }
-
-        ;
-            .sidenav a {
-                font-size: 18px
-            }
-
-        ;
-        }
-
-
-        /*projects*/
-        .container {
-            position: relative;
-            width: 50%;
-            max-width: 300px;
-            float: left;
-            margin-right: 20px;
-            margin-left: 95px;
-            margin-bottom: 90px;
-        }
-
-        .image {
-            display: block;
-        }
-
-        .title {
-            position: absolute;
-            bottom: 0;
-            background: rgb(0, 0, 0);
-            background: rgba(255, 255, 255, 0.5);
-            color: #f1f1f1;
-            width: 350px;
-            height: 300px;
-            transition: .5s ease;
-            opacity: 0;
-            color: #721c24;
-            font-size: 20px;
-            text-align: center;
-        }
-
-        .image-title {
-            font-family: JasmineUPC;
-            font-size: 30px;
-            margin-top: 130px;
-        }
-
-        .container:hover .title {
-            opacity: 1;
-        }
-
-        .drop {
-            display: none;
-            background-color: #f9f9f9;
-            margin: 10px;
-        }
-
-        .drop .prj {
-            padding: 5px;
-        }
-
-        .drop .prj:hover {
-            color: #0c5460;
-        }
-
-        #drop:hover .drop {
-            display: block;
-        }
-
-        /*about*/
-        #about {
-            background: #f0eac1;
-        }
-        .about {
-            display: inline-block;
-        }
-
-        .section1border {
-            border-right: 2px solid silver;
-            padding: 80px;
-            width: 520px;
-        }
-
-        /*services*/
-        #services {
-
-            overflow: hidden;
-            text-align: center;
-            display: inline;
-        }
-        .container1 {
-            display: inline-block;
-            margin-left: 140px;
-        }
-
-        /*contact*/
-        #contact {
-            background: #1b1e21;
-            color: white;
-
-        }
-        #frm {
-            margin-left: 280px;
-            font-family: "Sakkal Majalla";
-        }
-        #username, #phone, #email {
-            padding: 15px;
-            width: 40%;
-            border-radius: 5px;
-            border: none;
-            box-shadow: 2px 2px 2px silver;
-        }
-        #message {
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 2px 2px 2px silver;
-        }
-        #submit {
-            padding: 10px;
-            border-radius: 3px;
-            color: white;
-            background: #d39e00;
-            border: none;
-            margin-left: 440px;
-            margin-bottom: 50px;
-            text-transform: uppercase;
-            box-shadow: 2px 2px 2px silver;
-            cursor: pointer;
-        }
-        footer {
-
-            margin-bottom: 30px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        footer i {
-            margin-left: 550px;
-        }
-        .fab:hover {
-            border-radius: 50%;
-            background-color: blue;
-            cursor: pointer;
-        }
-
-    </style>
+    <link rel="stylesheet" href="font-awesome/css/all.css">
 </head>
-<body>
-<div id="mySidenav" class="sidenav">
-    <!--X(baglamaq)-->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a>
-    <!--menu-->
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects" id="drop">Projects
-        <i class="fa fa-angle-right" style="margin-left: 5px; margin-top: 5px"></i>
-        <ul class="drop">
-            <li>Project 1</li>
-            <li>Project 2</li>
-            <li>Project 3</li>
-        </ul>
+<style>
+    body {
+        position: relative;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        line-height: 60px;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+</style>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="bg-light">
+
+<nav class="navbar bg-light navbar-light navbar-expand-lg fixed-top">
+
+    <a href="#" class="navbar-brand">Hello World
+        <i class="fa fa-ge fa-spin" style="font-size:24px"></i>
     </a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a href="#CarouselID" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">Messages</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="drop" data-toggle="dropdown">Projects</a>
+                <div class="dropdown-menu">
+                    <a href="#project1" class="dropdown-item mt-2">Project 1</a>
+                    <a href="#project2" class="dropdown-item mt-2">Project 2</a>
+                    <a href="#project3" class="dropdown-item mt-2">Project 3</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item mt-2 disabled">Project 4</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <form class="form-inline" action="#">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <button type="submit" class="input-group-text">&telrec;</button>
+                </div>
+                    <div>
+                        <input type="text" class="form-control mr-sm-2" placeholder="Search...">
+                    </div>
+            </div>
+        </form>
+
+    </div>
+
+</nav>
+<!--Cover photo-->
+<div class="carousel slide carousel-fade" data-ride="carousel" id="CarouselID">
+
+    <ol class="carousel-indicators">
+        <li data-target="#CarouselID" data-slide-to="0" class="active"></li>
+        <li data-target="#CarouselID" data-slide-to="1"></li>
+        <li data-target="#CarouselID" data-slide-to="2"></li>
+        <li data-target="#CarouselID" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://data.whicdn.com/images/190407402/original.jpg" class="d-block w-100" alt="Cover Photo"
+                 height="600">
+            <div class="carousel-caption">
+                <h3>Hello world</h3>
+                <p><a href="#" class="btn btn-danger">Learn More</a></p>
+            </div>
+        </div>
+        <div class="carousel-item ">
+            <img src="https://data.whicdn.com/images/166365224/original.jpg" class="d-block w-100" alt="Cover Photo"
+                 height="600">
+            <div class="carousel-caption">
+                <h3>Hello world</h3>
+                <p><a href="#" class="btn btn-danger">Learn More</a></p>
+            </div>
+        </div>
+        <div class="carousel-item ">
+            <img src="https://data.whicdn.com/images/330355365/original.jpg" class="d-block w-100" alt="Cover Photo"
+                 height="600">
+            <div class="carousel-caption">
+                <h3>Hello world</h3>
+                <p><a href="#" class="btn btn-danger">Learn More</a></p>
+            </div>
+        </div>
+        <div class="carousel-item ">
+            <img src="https://data.whicdn.com/images/281835077/original.jpg" class="d-block w-100" alt="Cover Photo"
+                 height="600">
+            <div class="carousel-caption">
+                <h3>Hello world</h3>
+                <p><a href="#" class="btn btn-danger">Learn More</a></p>
+            </div>
+        </div>
+
+        <a href="#CarouselID" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#CarouselID" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
 </div>
 
-<span style="font-size: 30px; cursor: pointer;" onclick="openNav();">&#9776</span>
-
-<header id="home">
-    <h3>Hello World</h3>
-    <div>
-        <a href="#projects" class="headbtn">Learn More</a>
-    </div>
-</header>
-
-<section id="projects" style="clear: left;">
-
-    <h2 style="text-align: center; color: #0c5460; font-size: 50px; font-family: JasmineUPC">Projects</h2>
-
-    <div class="container">
-        <a href="#" target="_blank"><img src="https://data.whicdn.com/images/335856170/original.jpg" width="350px" height="300px" class="image">
-            <div class="title">
-                <h4 class="image-title">Project 1</h4>
+<!--About Us-->
+<div class="container mt-4" id="about">
+        <h2 class="text-md-center">About</h2>
+        <p class="text-md-center text-muted"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
+        <div class="row">
+            <div class="col-sm-5 offset-sm-1">
+                <img src="https://data.whicdn.com/images/336118571/original.jpg" style="width: 350px; height: 250px"
+                     alt="autumn"
+                     class="rounded img-thumbnail img-fluid">
             </div>
-        </a>
-    </div>
-
-    <div class="container">
-        <a href="#" target="_blank"><img src="https://data.whicdn.com/images/335852396/original.jpg" width="350px" height="300px" class="image">
-            <div class="title">
-                <h4 class="image-title">Project 2</h4>
+            <div class="col-sm-6">
+                <p class="text-muted mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
+                    vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
             </div>
-        </a>
-    </div>
-
-    <div class="container">
-        <a href="#" target="_blank"><img src="https://data.whicdn.com/images/335856223/original.jpg" width="350px" height="300px" class="image">
-            <div class="title">
-                <h4 class="image-title">Project 3</h4>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="text-muted mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                    voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
+                    vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
             </div>
-        </a>
+            <div class="col-sm-5 offset-sm-1">
+                <img src="https://data.whicdn.com/images/336118571/original.jpg" style="width: 350px; height: 250px"
+                     alt="autumn"
+                     class="rounded img-thumbnail img-fluid">
+            </div>
+        </div>
     </div>
-</section>
 
-<section id="about" style="clear: left;">
-    <h2 style="text-align: center; color: #0c5460; font-size: 50px;font-family: JasmineUPC">About</h2>
-
-    <p style="color: silver; text-align: center; font-size: 30px"><em>Lorem ipsum dolor sit amet</em></p>
-    
-    <div class="about">
-        <p style="width: 20%; margin-left: 280px; position: absolute">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-            voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-            vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-        </p>
-        <img src="https://data.whicdn.com/images/335855837/original.jpg" width="150px" height="150px"
-             style="border: 5px solid silver; border-radius: 50%; border-bottom: 5px solid silver; margin-left: 600px; position: relative">
-    </div>
-    <p class="section1border" style="margin-right: 50px"></p>
-    <div>
-        <img src="https://data.whicdn.com/images/335856223/original.jpg" width="150px" height="150px"
-             style="border: 5px solid silver; border-radius: 50%; border-bottom: 5px solid silver; margin-left: 600px; margin-bottom: 100px">
-        <p style="width: 20%; margin-left: 780px; position: absolute; margin-top: -250px">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-            voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
-            vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-        </p>
-    </div>
-</section>
-
-<section id="services" style="clear: left">
-
-    <h2 style="text-align: center; color: #0c5460; font-size: 50px;font-family: JasmineUPC">Services</h2>
-
-    <div class="container1" style="width: 20%">
-
-   <span class="fa-stack fa-4x" style="color: #d39e00">
+<!--Services-->
+<div class="container-fluid bg-info text-white mt-5" id="services">
+    <h2 class="text-center mb-3">Services</h2>
+    <p class="text-center text-white-50"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
+    <div class="row">
+        <div class="col-sm-3 offset-sm-1">
+            <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-   </span>
+            </span>
 
-        <h4 style="font-size: 30px; font-family: JasmineUPC;color: #0c5460;">E-Commerce</h4>
+            <h4>E-Commerce</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore
+                harum
+                ex magni, dicta impedit.
+            </p>
+        </div>
 
-        <p style="text-align: justify">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum
-            ex magni, dicta impedit.
-        </p>
-
-    </div>
-
-    <div class="container1" style="width: 20%">
-
-    <span class="fa-stack fa-4x" style="color: #d39e00">
+        <div class="col-sm-3 offset-sm-1">
+            <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
     </span>
 
-        <h4 style="font-size: 30px; font-family: JasmineUPC;color: #0c5460;">Responsive Design</h4>
+            <h4>Responsive Design</h4>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum
-            ex magni, dicta impedit.</p>
-
-    </div>
-
-    <div class="container1" style="width: 20%">
-
-    <span class="fa-stack fa-4x" style="color: #d39e00">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore
+                harum
+                ex magni, dicta impedit.</p>
+        </div>
+        <div class="col-sm-3 offset-sm-1 mb-5">
+             <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
     </span>
 
-        <h4 style="font-size: 30px; font-family: JasmineUPC;color: #0c5460;">Web Security</h4>
+            <h4>Web Security</h4>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum
-            ex magni, dicta impedit.</p>
-
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore
+                harum
+                ex magni, dicta impedit.</p>
+        </div>
     </div>
-</section>
+</div>
 
-<section id="contact">
+<!--Projects-->
+<div class="container-fluid mt-5" id="projects">
+    <h2 class="text-center">Projects</h2>
+    <p class="text-center text-muted"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
+    <div class="text-center">
+        <img src="https://data.whicdn.com/images/333674373/original.jpg" class="img-fluid rounded"
+             style="width: 500px; height: 400px" id="project1">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-1">
+                <h4 class="mt-3">First project</h4>
+            </div>
+            <div class="col-sm-8 offset-sm-1">
+                <p class="text-muted mt-2"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime
+                    quam architecto quo inventore harum
+                    ex magni, dicta impedit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+                    inventore harum
+                    ex magni, dicta impedit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+                    inventore harum
+                    ex magni, dicta impedit.</em></p>
+            </div>
+        </div>
+        <hr>
+        <img src="https://data.whicdn.com/images/336456714/superthumb.jpg?t=1571434888" class="img-fluid rounded"
+             style="width: 500px; height: 400px" id="project2">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-1">
+                <h4 class="mt-3">Second project</h4>
+            </div>
+            <div class="col-sm-8 offset-sm-1">
+                <p class="text-muted mt-2"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime
+                    quam architecto quo inventore harum
+                    ex magni, dicta impedit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+                    inventore harum
+                    ex magni, dicta impedit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+                    inventore harum
+                    ex magni, dicta impedit.</em></p>
+            </div>
+        </div>
+        <hr>
+        <img src="https://data.whicdn.com/images/336463600/original.jpg" class="img-fluid rounded"
+             style="width: 500px; height: 400px" id="project3">
+        <div class="row">
+            <div class="col-sm-2 offset-sm-1">
+                <h4 class="mt-3">Third project</h4>
+            </div>
+            <div class="col-sm-8 offset-sm-1">
+                <p class="text-muted mt-2"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime
+                    quam architecto quo inventore harum
+                    ex magni, dicta impedit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+                    inventore harum
+                    ex magni, dicta impedit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo
+                    inventore harum
+                    ex magni, dicta impedit.</em></p>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <h2 style="text-align: center; font-size: 50px;font-family: JasmineUPC">Contact</h2>
-
-    <form id="frm" name="frm" action="#" method="post">
-        <input type="text" id="username" placeholder="Your Name *" required>
-        <p id="result"></p>
-        <input type="email" id="email" placeholder="Your Email *" required>
-        <p id="result1"></p>
-        <input type="text" id="phone"  placeholder="Your Phone *" required>
-        <p id="result2"></p>
-        <textarea id="message" placeholder="Your message *" cols="60" rows="10" required></textarea>
-        <p id="result3"></p>
+<!--Contact-->
+<div class="container-fluid bg-dark text-white mt-5" id="contact">
+    <h2 class="text-center mb-2">Contact</h2>
+    <form novalidate class="needs-validation">
+        <div class="form-group row">
+            <div class="col-sm-4 offset-2">
+                <label for="firstName">First Name </label>
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" name="firstName" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please, enter your name.</div>
+        </div>
+            <div class="col-sm-4">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" name="lastName" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please, enter your name.</div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-8 offset-sm-2">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="@example.com" name="email" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please, enter your email.</div>
+        </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-8 offset-sm-2">
+                <label for="message">Your Messages</label>
+                <textarea class="form-control" id="message" rows="6" placeholder="Your Messages..." name="message" required></textarea>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please, enter your messages.</div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        <div class="row">
+            <div class="col-sm-3 offset-sm-5">
+                <button type="submit" class="btn btn-info mb-5">Send Message</button>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
     </form>
+</div>
 
-    <button type="submit" id="submit" onclick="sendMessage()">Send Message</button>
-    <p id="result4"></p>
-
-</section>
-<footer style="clear:left;">
-
-    <span style="padding: 5px; font-size: 20px; margin-left: 220px;margin-top: 5px;position: absolute">Copyright &copy;2019</span>
-
-    <span class="fa-stack fa-1x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fab fa-twitter fa-stack-1x fa-inverse" style="color: white"></i>
-    </span>
-    <span class="fa-stack fa-1x" >
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="color: white"></i>
-    </span>
-    <span class="fa-stack fa-1x" >
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fab fa-linkedin fa-stack-1x fa-inverse" style="color: white"></i>
-    </span>
-
-
-    <a href="#" style="position: absolute; margin-left: 700px; margin-top: 9px; font-size: 20px; color: #ff9a36;">Privacy Policy</a>
-
+<footer class="footer bg-light">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+            <span class="text-dark">&copy;2019</span>
+        </div>
+        <div class="container">
+        <div class="row">
+            <div class="col-3 offset-5">
+                <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+                <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>
+                <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        </div>
+    </div>
 </footer>
 
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 <script>
-    'use strict';
-    function sendMessage() {
-        var username,
-            email,
-            phone,
-            message,
-            result,
-            result1,
-            result2,
-            result3;
+    /*contact*/
 
-        username = document.getElementById("username").value;
-        email = document.getElementById("email").value;
-        phone = document.getElementById("phone").value;
-        message = document.getElementById("message").value;
-        result = document.getElementById("result");
-        result1 = document.getElementById("result1");
-        result2 = document.getElementById("result2");
-        result3 = document.getElementById("result3");
-
-        if (username == "") {
-            result.style.color = "red";
-            result.innerText = "Please enter your name.";
-
-        }
-        if (email == "") {
-            result1.style.color = "red";
-            result1.innerText = "Please enter your email address.";
-        }
-        if (phone == "") {
-            result2.style.color = "red";
-            result2.innerText = "Please enter your phone number.";
-        }
-        if (message == "") {
-            result3.style.color = "red";
-            result3.innerText = "Please enter a message.";
-        } else {
-            result3.style.color = "green";
-            result3.innerHTML = "Thanks, your message has been sent."
-        }
-
-    }
-
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-
+    (function () {
+        'use strict';
+        window.addEventListener("load", function () {
+            var forms = document.getElementsByClassName("needs-validation");
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (e) {
+                   if (form.checkValidity() === false) {
+                       e.preventDefault();
+                       e.stopPropagation();
+                   }
+                   form.classList.add("was-validated");
+                }, false);
+            });
+        }, false);
+    })();
 </script>
 </body>
 </html>
