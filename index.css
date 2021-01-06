@@ -81,18 +81,12 @@ h3 {
 
 /*navbar nav large*/
 @media (min-width: 1200px) {
-    .navbar-nav {
-        display: none;
-    }
     .navbar-default .navbar-collapse {
         background-color: silver;
     }
 }
 /*navbar nav medium*/
 @media (min-width: 768px) and (max-width: 1199px) {
-    .navbar-nav {
-        display: none;
-    }
     .navbar-default .navbar-collapse {
         background-color: silver;
     }
