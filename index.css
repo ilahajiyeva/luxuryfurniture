@@ -13,6 +13,9 @@ h3 {
     margin-bottom: 15px;
     font-weight: bold;
 }
+.p1 {
+    font-weight: bold;
+}
 #box1, #box2, #box3 {
     border: 1px solid transparent;
     background-color: silver;
