@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    font-family: "Merriweather";
+    font-weight: bolder;
+}
+h3 {
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+#box1, #box2, #box3 {
+    border: 1px solid transparent;
+    background-color: silver;
+    margin-top: 20px;
+}
+
+.p1 {
+    font-weight: bold;
+}
+
+
+    /*navbar*/
+.navbar-default {
+    background: silver;
+    color: #000;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.navbar-brand {
+    font-family: 'Merriweather';
+    color: black;
+    font-weight: bolder;
+}
+.navbar-toggle {
+    border: 2px solid black!important;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    color: #000;
+    background-color: black!important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+    font-weight: bolder;
+}
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: white!important;
+}
+.navbar-default .navbar-collapse {
+    border-color: #000;
+    background-color: white;
+}
+.navbar-default .navbar-brand {
+    color: black;
+}
+.navbar-default .navbar-nav > li > a {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+}
+
+
+.navbar-nav:nth-child(1) {
+    border-bottom: 2px solid black;
+}
+.navbar-nav:nth-child(2) {
+    border-bottom: 2px solid black;
+}
+
+/*navbar nav large*/
+@media (min-width: 1200px) {
+    .navbar-nav {
+        display: none;
+    }
+    .navbar-default .navbar-collapse {
+        background-color: silver;
+    }
+}
+/*navbar nav medium*/
+@media (min-width: 768px) and (max-width: 1199px) {
+    .navbar-nav {
+        display: none;
+    }
+    .navbar-default .navbar-collapse {
+        background-color: silver;
+    }
+
+}
+
